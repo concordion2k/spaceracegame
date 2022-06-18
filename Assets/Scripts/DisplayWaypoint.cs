@@ -34,6 +34,9 @@ public class DisplayWaypoint : MonoBehaviour
         Vector3 wpScreenPos = mCamera.WorldToScreenPoint(currentWaypoint.transform.position);
         if (wpScreenPos.x > 0 || wpScreenPos.y > 0)
         {
+            // This solution was found here:
+            // https://forum.unity.com/threads/create-ui-health-markers-like-in-world-of-tanks.432935/
+
             // Offset position above object bbox (in world space)
             float offsetPosY = currentWaypoint.transform.position.y + 15f;
 
