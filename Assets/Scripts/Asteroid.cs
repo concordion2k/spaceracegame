@@ -13,6 +13,7 @@ public class Asteroid : MonoBehaviour
     private void Start()
     {
         asteroidHealth = gameObject.transform.localScale.x * 10;
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -23,11 +24,12 @@ public class Asteroid : MonoBehaviour
             if (HealthChanged != null)
                 HealthChanged($"{asteroidHealth}");
         }
-        if (asteroidHealth <= 0)
-        {
+        //if (asteroidHealth <= 0)
+        //{
             Debug.Log($"Asteroid {gameObject.name} destroyed!");
             HealthChanged("Destroyed!");
-            Destroy(gameObject);
-        }
+            this.GetComponent<Fracture>().FractureObject();
+            //Destroy(gameObject);
+        //}
     }
 }
