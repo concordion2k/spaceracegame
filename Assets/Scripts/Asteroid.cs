@@ -24,6 +24,8 @@ public class Asteroid : MonoBehaviour
             if (HealthChanged != null)
                 HealthChanged($"{asteroidHealth}");
         }
+
+        // This is where I do this thing about stuff
         //if (asteroidHealth <= 0)
         //{
             Debug.Log($"Asteroid {gameObject.name} destroyed!");
