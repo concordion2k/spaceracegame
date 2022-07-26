@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Terrain2.unity
     guid: a2e875368e140426a8d948bc8f89ea34
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 81c1915bad9423842b325e2ed51550d3,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 48e255b83c9311745ba100fb268f05ef,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 60e0e3174d17db748844102b375f2a1e,
+      type: 2}
